@@ -1,12 +1,32 @@
-# React + Vite
+# 🔍 Wallet Monitor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Web3 wallet monitoring app built with React, Vite, and RainbowKit.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multi-Network Support**: Base and Optimism networks
+- **Real-Time Asset Tracking**: View ETH, USDC, and OP balances with live USD values
+- **Wallet Connection**: Connect with MetaMask and other Web3 wallets
+- **Price Integration**: Real-time token prices from CoinGecko API
+- **Modern UI**: Beautiful glass-morphism design with responsive layout
 
-## Expanding the ESLint configuration
+## Supported Networks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Base**: ETH + USDC
+- **Optimism**: ETH + OP
+
+## Tech Stack
+
+- React + Vite
+- RainbowKit + Wagmi
+- Viem for blockchain interactions
+- TanStack Query for data fetching
+- CoinGecko API for price data
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+

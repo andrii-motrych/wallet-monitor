@@ -1,6 +1,6 @@
 import { useAccount, useBalance, useBlockNumber } from 'wagmi';
 import { useQuery } from '@tanstack/react-query';
-import AssetList from './AssetList';
+import GenericAssetList from './GenericAssetList';
 
 export default function WalletMonitor() {
   const { address, isConnected } = useAccount();
@@ -53,7 +53,7 @@ export default function WalletMonitor() {
         </div>
       </div>
 
-      <AssetList />
+      <GenericAssetList />
 
       <div className="transactions">
         <h3>Recent Transactions</h3>

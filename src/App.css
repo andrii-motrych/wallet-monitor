@@ -1,0 +1,131 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.app-header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wallet-connect {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wallet-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.wallet-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #4ade80;
+}
+
+.wallet-info p {
+  margin: 0.25rem 0;
+  font-family: monospace;
+}
+
+.wallet-monitor {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wallet-monitor h2 {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.wallet-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.address {
+  word-break: break-all;
+  font-size: 0.9rem !important;
+}
+
+.transactions {
+  margin-top: 1.5rem;
+}
+
+.transactions h3 {
+  margin: 0 0 1rem 0;
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.transactions p {
+  text-align: center;
+  opacity: 0.7;
+  font-style: italic;
+}

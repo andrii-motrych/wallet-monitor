@@ -9,14 +9,16 @@ export default function WalletConnect() {
 
   return (
     <div className="wallet-connect">
-      <ConnectButton />
+      <ConnectButton/>
       
       {isConnected && (
         <div className="wallet-info">
           <h3>Wallet Connected!</h3>
           <p><strong>Address:</strong> {address}</p>
           {balance && (
-            <p><strong>Balance:</strong> {balance.formatted} {balance.symbol}</p>
+            <div>
+              <p><strong>Balance:</strong> {balance.formatted} {balance.symbol}</p>
+            </div>
           )}
         </div>
       )}

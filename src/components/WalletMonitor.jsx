@@ -29,32 +29,8 @@ export default function WalletMonitor() {
   }
 
   return (
-    <div className="wallet-monitor">
-      <h2>Wallet Monitor</h2>
-      
-      <div className="wallet-stats">
-        <div className="stat-card">
-          <h3>Current Block</h3>
-          <p>{blockNumber ? blockNumber.toString() : 'Loading...'}</p>
-        </div>
-        
-        <div className="stat-card">
-          <h3>Wallet Balance</h3>
-          <p>
-            {balance ? `${balance.formatted} ${balance.symbol}` : 'Loading...'}
-          </p>
-        </div>
-        
-        <div className="stat-card">
-          <h3>Address</h3>
-          <p className="address">
-            {address ? `${address.slice(0, 6)}...${address.slice(-4)}` : 'N/A'}
-          </p>
-        </div>
-      </div>
-
+    <div className="wallet-monitor">      
       <GenericAssetList />
-
       <div className="transactions">
         <h3>Recent Transactions</h3>
         {transactions && transactions.length > 0 ? (

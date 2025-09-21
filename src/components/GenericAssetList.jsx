@@ -42,7 +42,15 @@ const COMMON_TOKENS = {
   },
   10: { // Optimism
     '0x4200000000000000000000000000000000000042': { symbol: 'OP', name: 'Optimism', decimals: 18 },
-  }
+  },
+  1: { // Ethereum
+    '0xA0b86a33E6441b8C4C8C0e4b8b8C8C0e4b8b8C8C0': { symbol: 'USDC', name: 'USD Coin', decimals: 6 },
+  },
+  // avalanche
+  43114: { // Avalanche
+    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7': { symbol: 'USDC', name: 'USD Coin', decimals: 6 },
+    '0x60781C2586D68229fde47564546784ab3fACA982': { symbol: 'AVAX', name: 'Avalanche', decimals: 18 },
+  },
 };
 
 // Token symbol to CoinGecko ID mapping
@@ -84,6 +92,7 @@ const getTokenLogo = (symbol, address) => {
     'USDC': 'https://cryptologos.cc/logos/usd-coin-usdc-logo.png',
     'OP': 'https://cryptologos.cc/logos/optimism-ethereum-op-logo.png',
     'WETH': 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
+    'AVAX': 'https://cryptologos.cc/logos/avalanche-avax-logo.png'
   };
   
   return logos[symbol] || `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`;
@@ -165,7 +174,9 @@ export default function GenericAssetList() {
 
   const networkNames = {
     8453: 'Base',
-    10: 'Optimism'
+    10: 'Optimism',
+    43114: 'Avalanche',
+    1: 'Ethereum'
   };
 
   return (
